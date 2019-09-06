@@ -1,0 +1,18 @@
+[
+{
+  "name":"sun.misc.Unsafe",
+  "fields":[{"name":"theUnsafe"}],
+  "methods":[{"name":"allocateInstance","parameterTypes":["java.lang.Class"] }]
+},
+{
+  "name":"test.gson.Operation",
+  "allDeclaredFields":true
+},
+{
+  "name":"test.gson.Operation$Type",
+  "fields":[
+    {"name":"PULL"}, 
+    {"name":"PUSH"}
+  ]
+}
+]
