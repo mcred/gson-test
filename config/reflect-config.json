@@ -6,7 +6,12 @@
 },
 {
   "name":"test.gson.Operation",
-  "allDeclaredFields":true
+  "allDeclaredFields":true,
+  "allPublicMethods":true,
+  "allDeclaredConstructors":true,
+  "allPublicConstructors":true,
+  "allDeclaredClasses":true,
+  "allPublicClasses":true
 },
 {
   "name":"test.gson.Operation$Type",

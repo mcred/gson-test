@@ -6,16 +6,16 @@ import com.google.gson.annotations.SerializedName
 data class Operation(
     var id: String,
     var type: Type
-)
-
-enum class Type(val value: String) {
-    @SerializedName("PUSH")
-    PUSH("PUSH"),
-    @SerializedName("PULL")
-    PULL("PULL")
+) {
+    enum class Type(val value: String) {
+        @SerializedName("PUSH")
+        PUSH("PUSH"),
+        @SerializedName("PULL")
+        PULL("PULL")
+    }
 }
 
-object Test {
+object Test {./g
     private val json = """{
     "id": "b5aa8d7f-423b-48d4-bd47-7e14a15f26e2",
     "type": "PULL"
@@ -24,8 +24,6 @@ object Test {
         .of(Operation::class.java)
 
     private val gson = GsonBuilder()
-        .setPrettyPrinting()
-        .registerTypeAdapterFactory(adapter)
         .create()
 
     @JvmStatic
